@@ -1,11 +1,16 @@
 package top.pxasen.dewdock;
 
 
-import atlantafx.base.theme.PrimerLight;
+
 import atlantafx.base.theme.Styles;
+import io.vproxy.vfx.control.globalscreen.GlobalScreenUtils;
+import io.vproxy.vfx.manager.image.ImageManager;
+import io.vproxy.vfx.manager.task.TaskManager;
 import io.vproxy.vfx.theme.Theme;
+import io.vproxy.vfx.ui.button.FusionImageButton;
 import io.vproxy.vfx.ui.scene.VScene;
 import io.vproxy.vfx.ui.scene.VSceneRole;
+import io.vproxy.vfx.ui.scene.VSceneShowMethod;
 import io.vproxy.vfx.ui.stage.VStage;
 import javafx.application.Application;
 import javafx.geometry.Insets;
@@ -22,10 +27,22 @@ import org.kordamp.ikonli.javafx.FontIcon;
 
 
 public class MainWindow extends Application {
-
+    private VStage stage;
     @Override
     public void start(Stage primaryStage) {
-        Application.setUserAgentStylesheet(new PrimerLight().getUserAgentStylesheet());
+
+        Theme.setTheme(new CustomTheme());
+
+        var stage = new VStage(primaryStage) {
+            @Override
+            public void close() {
+                super.close();
+                TaskManager.get().terminate();
+                GlobalScreenUtils.unregister();
+            }
+        };
+        stage.getInitialScene().enableAutoContentWidthHeight();
+        stage.setTitle("Dewdock");
 
         //创建菜单Scene
         var menuScene = new VScene(VSceneRole.DRAWER_VERTICAL);
@@ -40,18 +57,14 @@ public class MainWindow extends Application {
         //创建菜单按钮
         var menuBtn = new Button(null, new FontIcon(Feather.MENU));
         menuBtn.getStyleClass().addAll(Styles.BUTTON_ICON);
-        menuBtn.setOnAction(e -> {
-            menuScene.getNode().setVisible(!menuScene.getNode().isVisible());
-        });
+
+        var vbox = new VBox();
+        stage.getStage().setWidth(1280);
+        stage.getStage().setHeight(800);
+        stage.show();
 
 
 
-
-        Scene scene = new Scene(menuBtn,1200, 700);
-        primaryStage.initStyle(StageStyle.TRANSPARENT);
-        primaryStage.setScene(scene);
-        primaryStage.setTitle("Dewdock");
-        primaryStage.show();
     }
 
     public static void main(String[] args) {
