@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f30627e-0e60-46c4-b329-cbd4261280e2" name="更改" comment="Dewdock">
-      <change afterPath="$PROJECT_DIR$/src/main/java/top/pxasen/dewdock/CustomTheme.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/top/pxasen/dewdock/MainWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/top/pxasen/dewdock/MainWindow.java" afterDir="false" />
-    </list>
+    <list default="true" id="5f30627e-0e60-46c4-b329-cbd4261280e2" name="更改" comment="Dewdock" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +27,9 @@
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="PerforceDirect.Settings">
+    <option name="CHARSET" value="无" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 3
@@ -46,7 +45,6 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "G:/EnvironmentVariable/javafx-sdk-11.0.2/lib/javafx.web.jar",
@@ -58,6 +56,7 @@
     "project.structure.last.edited": "库",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
     "vue.rearranger.settings.migration": "true",
     "应用程序.MainWindow.executor": "Run"
   }
@@ -79,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741454631214</updated>
       <workItem from="1741454632803" duration="3405000" />
-      <workItem from="1741443206905" duration="4643000" />
+      <workItem from="1741443206905" duration="4769000" />
     </task>
     <task id="LOCAL-00001" summary="Dewdock">
       <option name="closed" value="true" />
@@ -89,7 +88,23 @@
       <option name="project" value="LOCAL" />
       <updated>1741444374811</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Dewdock">
+      <option name="closed" value="true" />
+      <created>1741447936492</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1741447936492</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Dewdock">
+      <option name="closed" value="true" />
+      <created>1741447940967</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1741447940967</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
