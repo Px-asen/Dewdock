@@ -6,6 +6,7 @@ module top.pxasen.dewdock {
     requires atlantafx.base;
     requires io.vproxy.vfx;
     requires org.kordamp.ikonli.feather;
+    requires javafx.graphics;
 
     opens top.pxasen.dewdock to javafx.fxml;
     exports top.pxasen.dewdock;
