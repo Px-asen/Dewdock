@@ -1,0 +1,68 @@
+@font-face {
+    font-family: "阿里巴巴普惠体 3.0 55 Regular";
+    src: url("fonts/fonts/AlibabaPuHuiTi-3-65-Medium.ttf");
+}
+
+.root {
+    -fx-font-family: "阿里巴巴普惠体 3.0 55 Regular", "Microsoft YaHei", "Arial", sans-serif;
+    -fx-font-size: 15px;
+}
+
+.button {
+    -fx-font-family: "阿里巴巴普惠体 3.0 55 Regular";
+    -fx-font-size: 15px;
+}
+
+.button.flat:hover {
+    -fx-underline: false;
+    -fx-text-decoration: none;
+}
+
+.custom-horizontal-separator .line {
+    -fx-border-width: 0;
+    -fx-background-color: #181A1F;
+}
+
+/* 确保Tab中的图标始终显示 */
+.tab .tab-container .tab-label {
+    -fx-content-display: left;
+    -fx-graphic-text-gap: 5;
+}
+
+.tab .ikonli-font-icon {
+    -fx-icon-size: 16px;
+}
+
+/* 调整Tab的样式 */
+.tab-pane .tab {
+    -fx-padding: 5 10 5 10;
+}
+
+.tab-pane .tab .tab-container {
+    -fx-alignment: center;
+}
+
+/* 让按钮看起来像Tab */
+.tab-button {
+    -fx-background-radius: 5 5 0 0;
+    -fx-padding: 8 15 8 15;
+    -fx-focus-traversable: false;
+    -fx-border-width: 1 1 0 1;
+    -fx-border-color: transparent;
+    -fx-background-color: #f0f0f0;
+}
+
+.tab-button:hover {
+    -fx-background-color: #e0e0e0;
+}
+
+.tab-button:pressed, .tab-button.selected {
+    -fx-background-color: white;
+    -fx-border-color: #ddd #ddd transparent #ddd;
+}
+
+/* 确保图标在文字前面 */
+.tab-button .ikonli-font-icon {
+    -fx-icon-size: 16px;
+    -fx-icon-color: #555;
+}

@@ -19,11 +19,11 @@ public class CustomTheme extends DarkTheme {
 
     @Override
     public Color normalTextColor() {
-        return Color.web("#191919"); // 深灰文字提高可读性
+        return Color.web("#737780"); // 深灰文字提高可读性
     }
 
     public Color mainColor() {
-        return Color.web("#5E81AC"); // 示例颜色
+        return Color.web("#181A1F"); // 示例颜色
     }
 
     @Override
@@ -58,19 +58,19 @@ public class CustomTheme extends DarkTheme {
 
     @Override
     public Color fusionButtonNormalBackgroundColor() {
-        return Color.TRANSPARENT; // 默认透明背景
+        return Color.TRANSPARENT; 
     }
 
     @Override
     public Image windowCloseButtonNormalImage() {
-    // 修改为你想要的颜色
         return ImageManager.get().load("close.png");
     }
+
     @Override
     public Image windowCloseButtonHoverImage() {
-    // 修改为你想要的颜色
         return ImageManager.get().load("close.png");
     }
+
     @Override
     public Image windowIconifyButtonNormalImage() {
         return ImageManager.get().load("iconify.png");
